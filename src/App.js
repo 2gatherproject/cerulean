@@ -6,7 +6,7 @@ import TimelinePage from "./TimelinePage";
 import Modal from "./Modal";
 import ReputationPane from "./ReputationPane";
 
-const constDendriteServer = "https://dendrite.matrix.org";
+const constDendriteServer = process.env.REACT_APP_DENDRITE_SERVER || "https://dendrite.matrix.org";
 
 // Main entry point for Cerulean.
 // - Reads the address bar and loads the correct page.
